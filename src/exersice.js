@@ -78,4 +78,4 @@ store.dispatch(decrease());
 store.dispatch(changeText());
 store.dispatch(addToList({ id:1, text: "변경할텍스트"}));
 
-window.store = store;
+unsubscribe();
