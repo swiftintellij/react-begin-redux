@@ -20,11 +20,11 @@ const initialState = [
 
 ];
 
-
-export default function todos (state= initialState, action) {
+// 리듀서
+export default function todos(state= initialState, action) {
     switch (action.type) {
         case ADD_TODO:
-            return state.concat(action.text);
+            return state.concat(action.todo);
         case TOGGLE_TODO:
             return state.map(todo =>
                 todo.id === action.id ? {
